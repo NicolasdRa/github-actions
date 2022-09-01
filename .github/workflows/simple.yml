@@ -12,5 +12,9 @@ jobs:
         run: | 
           node -v
           npm -v
-          eccho "this"
+      - name: python Command
+        run: |
+          import platform
+          print(platform.processor())
+        shell: python
 
